@@ -1,0 +1,57 @@
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      direction: rtl;
+    }
+    .sidebar {
+      height: 100%;
+      width: 0;
+      position: fixed;
+      top: 0;
+      right: 0;
+      background-color: #222;
+      overflow-x: hidden;
+      transition: 0.3s;
+      padding-top: 60px;
+      z-index: 1000;
+    }
+    .sidebar.open {
+      width: 250px;
+    }
+    .sidebar a {
+      padding: 12px 24px;
+      text-decoration: none;
+      font-size: 18px;
+      color: #ddd;
+      display: block;
+      transition: 0.2s;
+    }
+    .sidebar a.active, .sidebar a:hover {
+      background: #444;
+      color: #fff;
+    }
+    .sidebar .closebtn {
+      position: absolute;
+      top: 10px;
+      left: 16px;
+      font-size: 32px;
+      color: #fff;
+      background: none;
+      border: none;
+      cursor: pointer;
+    }
+    .sidebar.openbtn {
+      font-size: 24px;
+      cursor: pointer;
+      background-color: #222;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      z-index: 1100;
+    }
+    .main-content {
+      padding: 24px;
+    }
