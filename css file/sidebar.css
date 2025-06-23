@@ -27,31 +27,39 @@
       transition: 0.2s;
     }
     .sidebar a.active, .sidebar a:hover {
+      cursor: alias;
       background: #444;
       color: #fff;
     }
     .sidebar .closebtn {
       position: absolute;
       top: 10px;
-      left: 16px;
+      right: 10px;
       font-size: 32px;
       color: #fff;
       background: none;
       border: none;
       cursor: pointer;
+      z-index: 1101;
     }
-    .sidebar.openbtn {
-      font-size: 24px;
+    .openbtn {
+      font-size: 20px;
       cursor: pointer;
       background-color: #222;
       color: white;
       border: none;
-      padding: 10px 20px;
+      padding: 10px 10px;
       position: fixed;
       top: 20px;
       right: 20px;
-      z-index: 1100;
+      z-index: 1102;
+    }
+    .openbtn.hide {
+      display: none;
     }
     .main-content {
       padding: 24px;
+    }
+    .sidebar.open ~ .openbtn {
+      display: none;
     }
